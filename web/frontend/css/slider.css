@@ -1,0 +1,83 @@
+.slider {
+	height: 426px;
+}
+
+.current-full {
+	height: inherit;
+	width: 75%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.current-full img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.miniature-col {
+	height: inherit;
+	width: 25%;
+	float: right;
+}
+
+.article-miniature {
+	height: 25%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.article-miniature > img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+} 
+
+.current-full > a > h1,
+.article-miniature > a > h1,
+.current-full > p {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.article-miniature > a > h1 {
+	font-size: 13px;
+	padding-bottom: 6px;
+	padding-top: 5px;
+	bottom: 0;
+}
+
+.current-full > a > h1 {
+	padding-bottom: 8px;
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-right: 5px;
+	top: 0;
+	font-size: 22px;
+}
+
+.current-full > p {
+	bottom: 0;
+	padding: 10px;
+}
+
+.slider-active {
+	opacity: .5;
+}

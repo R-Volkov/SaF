@@ -1,0 +1,6 @@
+/uploads/*.jpeg
+/uploads/*.gif
+/uploads/*.png
+/uploads/*.jpg
+/uploads/USERS/*
+!/uploads/USERS/.gitkeep

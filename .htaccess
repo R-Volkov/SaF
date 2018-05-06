@@ -1,0 +1,28 @@
+AddDefaultCharset UTF-8
+
+# Mod_Autoindex
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+# Mod_Rewrite
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+
+  RewriteEngine On
+
+  IndexIgnore */*
+  RewriteRule ^admin/(.*)?$ /web/admin/$1 [L,PT]
+  # RewriteRule ^([^/].*)?$ /web/frontend/$1
+  RewriteRule (.*) /web/frontend/$1
+  RewriteRule ^web/(.*)/$ /web/$1
+
+</IfModule>
+
+
+<IfModule mod_php7.c>
+	php_value max_execution_time 500
+	php_value max_input_time 500
+	php_value upload_max_filesize 30M
+	php_value post_max_size 30M
+</IfModule>

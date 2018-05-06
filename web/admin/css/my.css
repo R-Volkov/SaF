@@ -1,0 +1,194 @@
+#articleImage {
+	max-width: auto;
+	max-height: auto;
+}
+
+
+/*Grid wiev*/
+
+img.grid-view-image {
+    height: auto;
+    max-width: 100px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.p-grid-all img.grid-view-image,
+.u-grid-all img.grid-view-image {
+    max-width: 120px;
+    text-align: center;
+}
+
+.grid-img-wrapper > a, .show-all-images {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center; 
+}
+
+.not-set {
+    display: block;
+    text-align: center;
+}
+
+#imageModal .modal-body {
+    padding: 0;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Grid wiev moderation*/
+.grid-moderation-text, .grid-articles-text {
+    max-width: 1080px;
+}
+
+.grid-moderation-author {
+    min-width: 180px;
+}
+
+.grid-moderation-article {
+    max-width: 400px;
+}
+
+.table > tbody > tr > td.grid-moderation-images {
+    padding: 0;
+    width: 410px;
+}
+
+#moderation-from_date-kvdate, #articlessearch-from_date-kvdate, .grid-date {
+    width: 220px;
+}
+
+.show-hide-image {
+    padding-bottom: 3px;
+}
+
+.m-grid-all td, .p-grid-all td {
+    white-space: inherit;
+}
+
+.grid-ban,
+.grid-published-info {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.grid-user {
+    font-size: 18px;
+}
+
+.center-block {
+  display: block;
+  text-align: center;
+}
+
+.moderation-form {
+    margin-bottom: 15px;
+}
+
+.del-comment {
+    color: red;
+    font-style: italic;
+    display: block;
+    text-align: center; 
+}
+
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: 21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+  border-left: 1px solid black;
+}
+
+.nav-justified {
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.nav-sidebar > li.logout {
+    border: 1px solid black;
+    margin-top: 20px;
+    border-left: none;
+    text-align: center;
+}
+
+.nav-justified > li.logout {
+    border-left: 1px solid black;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: black;
+}
+
+.nav-justified > li > a {
+    color: black;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus,
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  color: white;
+  background-color: black;
+}
+
+.nav-sidebar > .logout > a:hover,
+.nav-justified > .logout > a:hover {
+    color: white;
+    background-color: red;
+}
+
+.contentContainer {
+    padding: 0;
+} 
+
+@media (max-width: 1080px) {
+    .admin-sidebar {
+        padding-right: 0;
+    }
+}
+
+/*Create*/
+
+.removeImage {
+    margin-top: 10px;
+}
+
+#CreateForm > div {
+    margin-top: 20px;
+}
+
+/*About*/
+
+.about div {
+    margin-left: 24px;
+    margin-right: 352px;
+}
+
+.about .title {
+    text-align: center;
+    margin-right: 352px;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.about h1 {
+    font-size: 26px;
+}
+
+.about h2 {
+    font-size: 20px;
+}
