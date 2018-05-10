@@ -81,17 +81,8 @@ class Articles extends ActiveRecord {
         ];
     }
 
-    // protected function getAlias($text)
-    // {
-    //     $pattern = '/[?"!:^~|@№$=+*&%<>«»#\/]/imu';
-    //     return preg_replace($pattern, '', $text);   
-    // }
-
     public function afterFind()
     {
-        //$this->alias = $this->getAlias($this->title);
-   		//$this->path_image_folder = Yii::getAlias("@uploads/$this->alias");
-        //$this->absolute_uploads_path = Yii::getAlias("@absolute_uploads/$this->alias");
         $this->tags_array = $this->tags;
 	}
 
@@ -147,10 +138,5 @@ class Articles extends ActiveRecord {
             $relation->delete();
         }
     }
-
-    // public function getAutorName()
-    // {
-    //     return $this->user->username;
-    // }
 
 }

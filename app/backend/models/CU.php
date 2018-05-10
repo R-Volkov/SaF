@@ -65,14 +65,11 @@ class CU extends Articles {
     }
 
     protected function correctImagesPath($text) {
-        //$replacement = Yii::getAlias('@uploads') . '/' . $this->alias . '/article_images/';
         $new_text = str_replace(Yii::getAlias('@temp'), Yii::getAlias('@uploads'), $text);
         return $new_text;
     }
    
     public function saveArticle(){
-        //$this->getAlias($this->title);
-        //$this->createImageFolder();
         $this->image = $this->imageBuild();
         $this->loadArticleImages($this->body);
         $this->body = $this->correctImagesPath($this->body);
@@ -81,7 +78,5 @@ class CU extends Articles {
         Yii::$app->cache->delete('main_articles');
         Yii::$app->cache->delete('last_articles');
     }
-
-
  
 }	
